@@ -1,0 +1,270 @@
+/* General Styling */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Registration Container */
+.container {
+    max-width: 800px;
+}
+
+/* Card Design */
+.card {
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Labels */
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Required Fields */
+.form-label.required::before {
+    content: "* ";
+    color: red;
+}
+
+/* Input Fields */
+.form-control {
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: #f9fafc;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focused Input */
+.form-control:focus {
+    border-color: #213183;
+    box-shadow: 0 0 5px rgba(33, 49, 131, 0.3);
+}
+
+/* Register Button */
+.btn-primary {
+    background: #213183;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #1b2770;
+}
+
+
+/* LOGIN PAGE CSS */
+
+
+/* General Page Styling */
+body {
+    background-color: #f3f3f4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centered Login Container */
+.login-container {
+    height: 100vh;
+}
+
+/* Login Card */
+.login-card {
+    width: 340px; /* Reduced width for a smaller look */
+    padding: 20px;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Labels */
+.form-label {
+    font-size: 13px; /* Reduced font size */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+/* Required Fields */
+.form-label.required::before {
+    content: "* ";
+    color: red;
+}
+
+/* Input Fields */
+.form-control {
+    font-size: 13px; /* Reduced text size */
+    padding: 8px; /* Smaller padding */
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background-color: #f9fafc;
+    height: 32px; /* Shorter input fields */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Focused Input */
+.form-control:focus {
+    border-color: #213183;
+    box-shadow: 0 0 4px rgba(33, 49, 131, 0.2);
+}
+
+/* Forgot Password */
+.forgot-password {
+    font-size: 12px; /* Smaller text */
+    color: #213183;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.btn-primary {
+    background: #213183;
+    border: none;
+    padding: 10px; /* Smaller button */
+    font-size: 13px;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #1b2770;
+}
+
+/* Register Link */
+a {
+    color: #213183;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Language Dropdown */
+.language-select {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 110px;
+}
+
+.language-select select {
+    width: 100%;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+
+/* Dashboard */
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f4;
+}
+
+/* Wrapper for Sidebar & Content */
+.wrapper {
+    display: flex;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #213183;
+    color: white;
+    transition: all 0.3s;
+    padding: 20px;
+    position: fixed;
+}
+
+#sidebar.active {
+    margin-left: -240px;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Sidebar Links */
+#sidebar ul.components {
+    padding: 0;
+}
+
+#sidebar ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Main Content */
+#content {
+    margin-left: 240px;
+    flex-grow: 1;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Logout Button */
+.btn-danger {
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+/* Sidebar Toggle Button */
+#sidebarCollapse {
+    background: none;
+    border: none;
+    font-size: 22px;
+    color: #213183;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -240px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        margin-left: 0;
+    }
+}

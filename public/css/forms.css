@@ -1,0 +1,10 @@
+/* Form Fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #555;
+}
